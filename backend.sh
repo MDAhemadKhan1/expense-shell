@@ -69,7 +69,7 @@ dnf install mysql -y
 Validate $? "Installing My Sql Client........"
 
 
-mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h 44.201.134.249 -uroot -pExpenseApp@1 < /app/schema/backend.sql
 Validate $? "Loading the schema and tables....."
 
 systemctl daemon-reload
