@@ -37,7 +37,7 @@ Validate $? "Enabling MySql....."
 systemctl start mysqld
 Validate $? "Starting MySql......"
 
-mysql -h 44.201.134.249 -u root -p ExpenseApp@1 -e 'show databases;'
+mysql -h 44.201.134.249 -u root -pExpenseApp@1 -e 'show databases;'
 if [ $? -ne 0 ]
 then
   echo " root password id not setup..." 
