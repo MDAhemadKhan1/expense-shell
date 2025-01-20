@@ -43,7 +43,6 @@ then
   useradd expense
   Validate $? "Addind User ...."
   echo " User Added successfully...."
-  exit 1
 else
   echo " User already exist......SO SKIPPING "
 fi
